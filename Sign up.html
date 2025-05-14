@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="Sign up.css" />
+</head>
+<body>
+  <div class="form-container">
+    <form id="signup-form">
+      <label for="fullname">Full name</label>
+      <input type="text" id="fullname" placeholder="Full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="username@gmail.com" required />
+
+      <label for="username">User name</label>
+      <input type="text" id="username" placeholder="User name" required />
+
+      <label for="password">Password</label>
+      <div class="password-wrapper">
+        <input type="password" id="password" placeholder="Password" required />
+        <span class="toggle-password" onclick="toggleVisibility('password')">👁️</span>
+      </div>
+
+      <label for="repeat-password">Repeat Password</label>
+      <div class="password-wrapper">
+        <input type="password" id="repeat-password" placeholder="Repeat Password" required />
+        <span class="toggle-password" onclick="toggleVisibility('repeat-password')">👁️</span>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+  <script src="Sign up.js"></script>
+</body>
+</html>
